@@ -1,30 +1,21 @@
 package org.mycompany.models;
 
-import javax.persistence.*;
 
-@Entity
-@Table(name="request_log_new")
+
 public class RequestLog {
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+
 	private int id;
 	
-	@Column(name="from_account_number")
 	private String fromAccountNumber;
 	
-	@Column(name="to_account_number")
 	private String toAccountNumber;
 	
-	@Column(name="from_amount")
 	private String fromAmount;
 	
-	@Column(name="to_amount")	
 	private String toAmount;
 	
-	@Column(name="currauncy")
 	private String curruncyCode;
 	
-	@Column(name="date")
 	private String Date;
 
 	public int getId() {

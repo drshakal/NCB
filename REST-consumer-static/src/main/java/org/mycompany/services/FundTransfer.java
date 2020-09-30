@@ -3,7 +3,6 @@ package org.mycompany.services;
 import org.mycompany.models.Request;
 import org.mycompany.models.RequestLog;
 import org.mycompany.models.Responce;
-import org.springframework.beans.factory.annotation.Autowired;
 
 
 public class FundTransfer {
