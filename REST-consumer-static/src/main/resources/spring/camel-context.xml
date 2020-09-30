@@ -7,12 +7,12 @@
             <xmljson id="xmljson"/>
         </dataFormats>
         <restConfiguration bindingMode="json" component="jetty"
-            host="localhost" port="9091"/>
+            host="localhost" port="9092"/>
         <rest id="rest" path="/ft">
-            <get id="rest-id" outType="org.mycompany.models.Responce"
+            <post id="rest-id" outType="org.mycompany.models.Responce"
                 type="org.mycompany.models.Request" uri="/transfer">
                 <to uri="direct:listnerEndpoint"/>
-            </get>
+            </post>
         </rest>
         <route id="listnerEndpoints">
             <from id="_from1" uri="direct:listnerEndpoint"/>
